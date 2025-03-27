@@ -1,24 +1,45 @@
-/* @keyframes fadein {
+@keyframes fadein {
     from {
         opacity: 0;
-        transform: translate(-50%, -50%) scale(1);
+        /* transform: translate(-50%, -50%) scale(1); */
 
     }
+
     to {
-        transform: translate(0%, 0%) scale(1);
+        /* transform: ranslate(0%, 0%) scale(1); */
         opacity: 1;
     }
-} */
+}
 
+@keyframes fadeout {
+    from {
+        opacity: 1;
+        /* transform: translate(-50%, -50%) scale(1); */
 
-#TaskDialog{
-    
+    }
 
+    to {
+        /* transform: ranslate(0%, 0%) scale(1); */
+        opacity: 0;
+    }
 }
 
 
 
-#TaskDialog_Backdrop{
+.fade-in{
+    animation: fadein 0.5s;
+
+}
+
+.fade-out {
+    
+    animation: fadeout 0.5s;
+}
+
+
+
+
+#TaskDialog_Backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -30,33 +51,36 @@
     cursor: pointer;
 }
 
-#TaskDialog_Content{
+#TaskDialog_Content {
     position: fixed;
     top: 50%;
     left: 50%;
     max-width: 90%;
-    padding: 20px;
+   
     translate: -50% -50%;
     width: 500px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.961);
-    
+
     border-radius: 25px;
     z-index: 11;
 }
 
-#TaskDialog_Header{
+#TaskDialog_Header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
     border-bottom: 0.1px solid rgb(229, 229, 229);
     margin-bottom: 20px;
     margin-top: 10px;
+    
 }
 
-#TaskDialog_Input{
+#TaskDialog_Input {
     display: flex;
     padding: 10px;
     flex-direction: column;
@@ -65,7 +89,7 @@
     margin: 50px 50px 50px 50px;
 }
 
-#TaskDialog_Buttons{
+#TaskDialog_Buttons {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -74,7 +98,7 @@
 }
 
 
-.TaskDialog_InputField{
+.TaskDialog_InputField {
     border: 0.1px solid rgb(229, 229, 229);
     border-radius: 20px;
     margin-top: 5px;

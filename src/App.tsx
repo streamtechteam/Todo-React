@@ -1,13 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import 'animate.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import './App.css'
-import AppContainer from './AppContainer'
+import AppContainer from './Components/AppContainer'
+
+
+
 function App() {
 
   return (
-    <>
+    
       <AppContainer />
-    </>
+    
   )
 }
 
